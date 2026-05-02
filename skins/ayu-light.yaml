@@ -1,0 +1,87 @@
+name: ayu-light
+description: Ayu Light — bright theme inspired by ayu-vim/ayu-colors light variant (paper-bright background with warm sunrise accents)
+
+# Palette reference (upstream ayu-vim / ayu-colors light variant):
+#   bg            #FCFCFC    bg_panel    #F3F4F5
+#   bg_alt        #F8F9FA    bg_status   #EAEEF1    bg_visual #E8E9E1
+#   fg            #5C6166    fg_dim      #828C99    fg_dimmer #ABB0B6
+#   primary       #399EE6    accent      #FA8D3E    accent2   #F2AE49
+#   accent3       #86B300    danger      #F07171    magenta   #A37ACC    cyan #4CBF99
+
+colors:
+  # Banner — calligraphy + sunrise gradient
+  banner_border: "#399EE6"
+  banner_title:  "#5C6166"
+  banner_accent: "#FA8D3E"
+  banner_dim:    "#828C99"
+  banner_text:   "#5C6166"
+
+  # Core UI
+  ui_accent: "#399EE6"
+  ui_label:  "#A37ACC"
+  ui_ok:     "#86B300"
+  ui_error:  "#F07171"
+  ui_warn:   "#F2AE49"
+
+  # Prompt + rules
+  prompt:          "#5C6166"
+  input_rule:      "#E6E1CF"
+  response_border: "#399EE6"
+
+  # Session header
+  session_label:  "#399EE6"
+  session_border: "#828C99"
+
+  # Status bar
+  status_bar_bg:       "#EAEEF1"
+  status_bar_text:     "#5C6166"
+  status_bar_strong:   "#FA8D3E"
+  status_bar_dim:      "#828C99"
+  status_bar_good:     "#86B300"
+  status_bar_warn:     "#F2AE49"
+  status_bar_bad:      "#F07171"
+  status_bar_critical: "#F07171"
+
+  # Voice / completion menus
+  voice_status_bg:                  "#EAEEF1"
+  completion_menu_bg:               "#F8F9FA"
+  completion_menu_current_bg:       "#F3F4F5"
+  completion_menu_meta_bg:          "#F8F9FA"
+  completion_menu_meta_current_bg:  "#EAEEF1"
+
+spinner: {}
+
+branding:
+  agent_name: "Hermes Agent"
+  welcome: "おはよう — Ayu Light. Type your message or /help."
+  goodbye: "またね 〜 鮎"
+  response_label: " 鮎 Hermes "
+  prompt_symbol: "❯ "
+  help_header: "(^_^)? Available Commands"
+
+tool_prefix: "│"
+
+# Block-letter banner — AYU AGENT (figlet ansi_shadow, 3-stop sunrise gradient)
+banner_logo: |
+  [bold #FA8D3E] █████╗ ██╗   ██╗██╗   ██╗         █████╗  ██████╗ ███████╗███╗   ██╗████████╗[/]
+  [bold #FA8D3E]██╔══██╗╚██╗ ██╔╝██║   ██║        ██╔══██╗██╔════╝ ██╔════╝████╗  ██║╚══██╔══╝[/]
+  [bold #FA8D3E]███████║ ╚████╔╝ ██║   ██║        ███████║██║  ███╗█████╗  ██╔██╗ ██║   ██║   [/]
+  [bold #F2AE49]██╔══██║  ╚██╔╝  ██║   ██║        ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║   ██║   [/]
+  [bold #F2AE49]██║  ██║   ██║   ╚██████╔╝        ██║  ██║╚██████╔╝███████╗██║ ╚████║   ██║   [/]
+  [bold #399EE6]╚═╝  ╚═╝   ╚═╝    ╚═════╝         ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   [/]
+
+# Stylized sunrise over water — kanji caption is 鮎 (ayu, sweetfish).
+# Replace freely; see scripts/generate_banner.py for regenerating.
+banner_hero: |
+  [#FCFCFC]                                                                              [/]
+  [#399EE6]      ░░░░░░░░░░░░░░░░░░░░░░[/][#F2AE49]                              [/][#399EE6]░░░░     [/]
+  [#399EE6]   ░░░░░░░░░░░░░░░░░░[/][#F2AE49]      ▄▄████████▄▄      [/][#399EE6]░░░░░░░░░░░░     [/]
+  [#399EE6]   ░░░░░░░░░░░░░[/][#F2AE49]      ▄██████[/][#FA8D3E]████████[/][#F2AE49]██████▄      [/][#399EE6]░░░░░░     [/]
+  [#399EE6]   ░░░░░░░░[/][#F2AE49]        ████[/][#FA8D3E]████████████████[/][#F2AE49]████        [/][#399EE6]░░     [/]
+  [#399EE6]   ░░░░[/][#F2AE49]          ████[/][#FA8D3E]██████[/][#FA8D3E]████████[/][#FA8D3E]██████[/][#F2AE49]████          [/][#399EE6]     [/]
+  [#399EE6]   ░░[/][#F2AE49]            ██[/][#FA8D3E]████[/][#FA8D3E]████[/][#FA8D3E]████████[/][#FA8D3E]████[/][#FA8D3E]████[/][#F2AE49]██            [/][#399EE6]     [/]
+  [#F2AE49]                ████[/][#FA8D3E]████████████████[/][#F2AE49]████                  [/]
+  [#399EE6]  ▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂▂▃▃▃▃▃[/][#86B300]▄▄▄▄▄▄▄▄▄▄▄▄▄[/][#399EE6]▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁  [/]
+  [#86B300]   ░▒▓██▓▒░  ░▒▓███▓▒░    ░▒▓██▓▒░    ░▒▓███▓▒░  ░▒▓██▓▒░   [/]
+  [bold #828C99]                          鮎  ·  AYU                          [/]
+  [dim #ABB0B6]                       Sunrise over Hokkaido                       [/]

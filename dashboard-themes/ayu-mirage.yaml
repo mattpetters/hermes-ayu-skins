@@ -1,0 +1,69 @@
+name: ayu-mirage
+label: Ayu Mirage
+description: Dim · twilight slate-blue background with peach + gold accents — ayu-colors mirage variant
+
+# Palette references mirror the CLI skin (skins/ayu-mirage.yaml) so the
+# terminal and web dashboard look like the same theme. See docs/PALETTE.md.
+
+palette:
+  # Canonical ayu mirage background.
+  background:
+    hex: "#1F2430"
+    alpha: 1
+  # Primary text/foreground accent.
+  midground:
+    hex: "#CBCCC6"
+    alpha: 1
+  # Top highlight kept at alpha 0 to mirror builtin behaviour.
+  foreground:
+    hex: "#ffffff"
+    alpha: 0
+  # Sunrise warm vignette — pulls the canvas toward dawn light.
+  warmGlow: "rgba(255, 173, 102, 0.18)"
+  # Subdued noise.
+  noiseOpacity: 0.6
+
+typography:
+  fontSans: '"Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
+  fontMono: '"Geist Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace'
+  fontDisplay: '"Geist", system-ui, sans-serif'
+  fontUrl: "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;700&display=swap"
+  baseSize: "15px"
+  lineHeight: "1.6"
+  letterSpacing: "-0.005em"
+
+layout:
+  radius: "0.5rem"
+  density: "comfortable"
+
+# Override the Nous DS font CSS variables — without these, the dashboard chrome
+# (nav, headings, branding) renders in Mondwest / Rules Expanded display fonts
+# regardless of `typography.fontSans`. Routing those vars through Geist makes
+# the whole UI visually consistent.
+customCSS: |
+  :root {
+    --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --font-mondwest: "Geist", system-ui, sans-serif;
+    --font-rules-expanded: "Geist", system-ui, sans-serif;
+    --font-rules-compressed: "Geist", system-ui, sans-serif;
+  }
+  :where([style*="Collapse"], [class*="collapse"]) {
+    font-family: "Geist", system-ui, sans-serif;
+  }
+
+# Pin shadcn tokens to ayu palette so accents read as ayu rather than DS-derived greys.
+colorOverrides:
+  primary: "#5CCFE6"
+  primaryForeground: "#1F2430"
+  accent: "#FFAD66"
+  accentForeground: "#1F2430"
+  ring: "#5CCFE6"
+  destructive: "#FF6666"
+  destructiveForeground: "#1F2430"
+  success: "#BAE67E"
+  warning: "#FFCC66"
+  border: "#33415E"
+  input: "#232834"
+  muted: "#232834"
+  mutedForeground: "#707A8C"

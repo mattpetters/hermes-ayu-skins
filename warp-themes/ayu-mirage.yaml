@@ -1,0 +1,25 @@
+name: Ayu Mirage
+accent: '#FFAD66'
+cursor: '#FFAD66'
+background: '#1F2430'
+foreground: '#CBCCC6'
+details: darker
+terminal_colors:
+  bright:
+    black: '#686868'
+    blue: '#5CCFE6'
+    cyan: '#95E6CB'
+    green: '#BAE67E'
+    magenta: '#D4BFFF'
+    red: '#FF6666'
+    white: '#FFFFFF'
+    yellow: '#FFAD66'
+  normal:
+    black: '#1A1F29'
+    blue: '#73D0FF'
+    cyan: '#95E6CB'
+    green: '#D5FF80'
+    magenta: '#DFBFFF'
+    red: '#F28779'
+    white: '#CBCCC6'
+    yellow: '#FFD580'

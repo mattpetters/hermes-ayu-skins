@@ -1,0 +1,25 @@
+name: Ayu Dark
+accent: '#FFB454'
+cursor: '#FFB454'
+background: '#0B0E14'
+foreground: '#BFBDB6'
+details: darker
+terminal_colors:
+  bright:
+    black: '#686868'
+    blue: '#59C2FF'
+    cyan: '#95E6CB'
+    green: '#AAD94C'
+    magenta: '#D2A6FF'
+    red: '#F07178'
+    white: '#FFFFFF'
+    yellow: '#FFB454'
+  normal:
+    black: '#11151C'
+    blue: '#53BDFA'
+    cyan: '#90E1C6'
+    green: '#7FD962'
+    magenta: '#CDA1FA'
+    red: '#EA6C73'
+    white: '#C7C7C7'
+    yellow: '#F9AF4F'

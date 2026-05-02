@@ -1,0 +1,25 @@
+name: Ayu Light
+accent: '#FA8D3E'
+cursor: '#FA8D3E'
+background: '#FCFCFC'
+foreground: '#5C6166'
+details: lighter
+terminal_colors:
+  bright:
+    black: '#828C99'
+    blue: '#399EE6'
+    cyan: '#4CBF99'
+    green: '#86B300'
+    magenta: '#A37ACC'
+    red: '#F07171'
+    white: '#5C6166'
+    yellow: '#FA8D3E'
+  normal:
+    black: '#5C6166'
+    blue: '#399EE6'
+    cyan: '#4CBF99'
+    green: '#86B300'
+    magenta: '#A37ACC'
+    red: '#F07171'
+    white: '#828C99'
+    yellow: '#F2AE49'

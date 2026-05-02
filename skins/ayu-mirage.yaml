@@ -1,0 +1,87 @@
+name: ayu-mirage
+description: Ayu Mirage — dim slate-blue theme inspired by ayu-vim/ayu-colors mirage variant (twilight background with peach/gold accents)
+
+# Palette reference (upstream ayu-vim / ayu-colors mirage variant):
+#   bg            #1F2430    bg_panel    #232834
+#   bg_alt        #191E2A    bg_status   #171B24    bg_visual #34455A
+#   fg            #CBCCC6    fg_dim      #707A8C    fg_dimmer #5C6773
+#   primary       #5CCFE6    accent      #FFAD66    accent2   #FFCC66
+#   accent3       #BAE67E    danger      #FF6666    magenta   #D4BFFF    cyan #95E6CB
+
+colors:
+  # Banner — calligraphy + sunrise gradient
+  banner_border: "#5CCFE6"
+  banner_title:  "#CBCCC6"
+  banner_accent: "#FFAD66"
+  banner_dim:    "#707A8C"
+  banner_text:   "#CBCCC6"
+
+  # Core UI
+  ui_accent: "#5CCFE6"
+  ui_label:  "#D4BFFF"
+  ui_ok:     "#BAE67E"
+  ui_error:  "#FF6666"
+  ui_warn:   "#FFCC66"
+
+  # Prompt + rules
+  prompt:          "#CBCCC6"
+  input_rule:      "#33415E"
+  response_border: "#5CCFE6"
+
+  # Session header
+  session_label:  "#5CCFE6"
+  session_border: "#707A8C"
+
+  # Status bar
+  status_bar_bg:       "#171B24"
+  status_bar_text:     "#CBCCC6"
+  status_bar_strong:   "#FFAD66"
+  status_bar_dim:      "#707A8C"
+  status_bar_good:     "#BAE67E"
+  status_bar_warn:     "#FFCC66"
+  status_bar_bad:      "#FF6666"
+  status_bar_critical: "#FF6666"
+
+  # Voice / completion menus
+  voice_status_bg:                  "#171B24"
+  completion_menu_bg:               "#191E2A"
+  completion_menu_current_bg:       "#232834"
+  completion_menu_meta_bg:          "#191E2A"
+  completion_menu_meta_current_bg:  "#171B24"
+
+spinner: {}
+
+branding:
+  agent_name: "Hermes Agent"
+  welcome: "こんばんは — Ayu Mirage. Type your message or /help."
+  goodbye: "またね 〜 鮎"
+  response_label: " 鮎 Hermes "
+  prompt_symbol: "❯ "
+  help_header: "(^_^)? Available Commands"
+
+tool_prefix: "┊"
+
+# Block-letter banner — AYU AGENT (figlet ansi_shadow, 3-stop sunrise gradient)
+banner_logo: |
+  [bold #FFAD66] █████╗ ██╗   ██╗██╗   ██╗         █████╗  ██████╗ ███████╗███╗   ██╗████████╗[/]
+  [bold #FFAD66]██╔══██╗╚██╗ ██╔╝██║   ██║        ██╔══██╗██╔════╝ ██╔════╝████╗  ██║╚══██╔══╝[/]
+  [bold #FFAD66]███████║ ╚████╔╝ ██║   ██║        ███████║██║  ███╗█████╗  ██╔██╗ ██║   ██║   [/]
+  [bold #FFCC66]██╔══██║  ╚██╔╝  ██║   ██║        ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║   ██║   [/]
+  [bold #FFCC66]██║  ██║   ██║   ╚██████╔╝        ██║  ██║╚██████╔╝███████╗██║ ╚████║   ██║   [/]
+  [bold #5CCFE6]╚═╝  ╚═╝   ╚═╝    ╚═════╝         ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   [/]
+
+# Stylized sunrise over water — kanji caption is 鮎 (ayu, sweetfish).
+# Replace freely; see scripts/generate_banner.py for regenerating.
+banner_hero: |
+  [#1F2430]                                                                              [/]
+  [#5CCFE6]      ░░░░░░░░░░░░░░░░░░░░░░[/][#FFCC66]                              [/][#5CCFE6]░░░░     [/]
+  [#5CCFE6]   ░░░░░░░░░░░░░░░░░░[/][#FFCC66]      ▄▄████████▄▄      [/][#5CCFE6]░░░░░░░░░░░░     [/]
+  [#5CCFE6]   ░░░░░░░░░░░░░[/][#FFCC66]      ▄██████[/][#FFAD66]████████[/][#FFCC66]██████▄      [/][#5CCFE6]░░░░░░     [/]
+  [#5CCFE6]   ░░░░░░░░[/][#FFCC66]        ████[/][#FFAD66]████████████████[/][#FFCC66]████        [/][#5CCFE6]░░     [/]
+  [#5CCFE6]   ░░░░[/][#FFCC66]          ████[/][#FFAD66]██████[/][#FFAD66]████████[/][#FFAD66]██████[/][#FFCC66]████          [/][#5CCFE6]     [/]
+  [#5CCFE6]   ░░[/][#FFCC66]            ██[/][#FFAD66]████[/][#FFAD66]████[/][#FFAD66]████████[/][#FFAD66]████[/][#FFAD66]████[/][#FFCC66]██            [/][#5CCFE6]     [/]
+  [#FFCC66]                ████[/][#FFAD66]████████████████[/][#FFCC66]████                  [/]
+  [#5CCFE6]  ▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂▂▃▃▃▃▃[/][#95E6CB]▄▄▄▄▄▄▄▄▄▄▄▄▄[/][#5CCFE6]▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁  [/]
+  [#95E6CB]   ░▒▓██▓▒░  ░▒▓███▓▒░    ░▒▓██▓▒░    ░▒▓███▓▒░  ░▒▓██▓▒░   [/]
+  [bold #707A8C]                          鮎  ·  AYU                          [/]
+  [dim #5C6773]                       Sunrise over Hokkaido                       [/]
